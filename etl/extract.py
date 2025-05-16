@@ -7,7 +7,7 @@ import requests
 from io import BytesIO
 from pathlib import Path
 # Load environment variables
-DATA_DIR = Path('../data/raw')
+DATA_DIR = Path('data/raw')
 
 def download_and_extract_zip(url, extract_to):
     """
@@ -29,7 +29,7 @@ def extract_data():
     and saves the extracted files to a specified directory.
     """
     url = "https://www.insee.fr/fr/statistiques/fichier/7633685/dpt2022_csv.zip"
-    extract_to = '../data/raw'
+    extract_to = 'data/raw'
 
     # Create the directory if it doesn't exist
     os.makedirs(extract_to, exist_ok=True)

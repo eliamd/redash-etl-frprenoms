@@ -1,3 +1,9 @@
+docker:
+	docker compose up -d
+
+install:
+	pip install -r requirements.txt
+
 extract:
 	python3 etl/extract.py
 
@@ -7,7 +13,7 @@ transform:
 load:
 	python3 etl/load.py
 
-etl: extract transform load
+all: install docker extract transform load
 
 clean:
 	rm -rf data/clean/*.csv db/*.db
