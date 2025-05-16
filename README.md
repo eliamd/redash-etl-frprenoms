@@ -1,4 +1,4 @@
-# 🇫🇷 OpenPrenoms – Analyse des prénoms français (1900–2022)
+# 🇫🇷  Analyse des prénoms français (1900–2022)
 
 🎯 **Projet personnel de Data Engineering** construit autour des données de prénoms publiées par l'INSEE.  
 L'objectif : créer un **pipeline ETL complet**, avec **visualisation interactive** via Redash.
